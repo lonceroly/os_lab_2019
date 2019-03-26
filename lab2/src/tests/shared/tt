@@ -1,0 +1,3 @@
+gcc -c -fPIC tests.c -o tests.o -lcunit
+gcc tests.o -Lshared -lrevert_string -o tests_exe -lcunit
+./tests_exe
